@@ -7,11 +7,6 @@ class Rectangulo:
         self.inicial = inicial if inicial is not None else Punto(0, 0)
         self.final = final if final is not None else Punto(0, 0)
     
-    def distancia(self):
-        dx = self.final.x - self.inicial.x
-        dy = self.final.y - self.inicial.y
-        return math.sqrt(dx**2 + dy**2)
-    
     def base(self):
         return abs(self.final.x - self.inicial.x)
     
